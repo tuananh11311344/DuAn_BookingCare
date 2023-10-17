@@ -1,0 +1,58 @@
+{
+    "home-header":{
+        "speciality":"Medical specialty",
+        "search-doctor":"Find a doctor by specialty",
+        "health-facility":"Health facilities",
+        "select-room":"Choose a hospital or clinic",
+        "doctor":"Doctor",
+        "select-doctor":"Choose a good doctor",
+        "fee":"Checkup package",
+        "check-health":"General health check",
+        "support":"Support",
+        "welcome":"Welcome, "
+    },
+    "banner":{
+        "title1":"MEDICAL PLATFORM",
+        "title2":"COMPREHENSIVE HEALTH CARE",
+        "child1":"Specialized examination",
+        "child2":"Remote examination",
+        "child3":"General examination",
+        "child4":"Medical tests",
+        "child5":"Mental health",
+        "child6":"Dental examination"
+    },
+    "menu": {
+        "admin":{
+            "manage-user": "Users system",
+            "manage-doctor": "Manage doctors",
+            "manage-admin": "Manage admins",
+            "crud": "CRUD user",
+            "crud-redux": "CRUD Redux",
+            "clinic":"Clinics",
+            "manage-clinic": "Manage clinics",
+            "specialty": "Specialties",
+            "manage-specialty": "Manage specialties",
+            "handbook": "Handbook",
+            "manage-handbook": "Manage handbook"
+        }
+    },
+    "manage-user":{
+        "add": "Add a new user",
+        "email":"Email",
+        "password":"Password",
+        "first-name": "First name",
+        "last-name": "Last name",
+        "phone-number":"Phone number",
+        "address":"Address",
+        "gender": "Gender",
+        "position": "Position",
+        "role": "Role",
+        "image": "Avatar",
+        "save": "Save user",
+        "edit":"Edit user"
+    },
+    "homepage":{
+        "outstanding-doctor":"Doctor featured last week",
+        "more-info":"MORE INFOR"
+    }
+}

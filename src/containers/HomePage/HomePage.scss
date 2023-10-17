@@ -1,0 +1,167 @@
+//phần riêng
+.section-share{
+    &.section-specialty{
+        background-color: #f5f5f5;
+    }
+    &.section-outstanding-doctor{
+        background-color: #f5f5f5;
+    }
+    &.section-about{
+        height: 500px !important;
+        background-color: #f5f5f5
+    }
+    .section-body{
+        .section-customize{
+            .bg-image{
+                width: 278px;
+                height: 150px;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: #eee;
+                
+                &.section-specialty{
+                    background-image: url('../../assets/specialty/co-xuong-khop.jpg');         
+                }
+                &.section-medical-facility{
+                    background-image:  url("../../assets/medical-facility/lo-go-viet-duc.jpg");
+                }
+                &.section-outstanding-doctor{
+                    // background-image: url("../../assets//outstanding-doctor/anh-dai-dien-bs.jpg");
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                }
+                &.section-handbook{
+                    background-image: url("../../assets/handbook/review-pathlab.png");
+                }
+            }
+        }
+    }
+}
+
+.section-outstanding-doctor{
+
+    .outer-bg{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    .section-customize{
+        padding: 5px;
+
+        .customize-border{
+            border: 1px solid orange;
+            padding: 20px;
+        }
+    }
+}
+
+.section-about{
+    padding: 0 100px;
+    .section-about-header{
+        padding: 20px 10px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .section-about-content{
+        display: flex;
+        gap: 15px;
+        width: 100%;
+
+        .content-left{
+            width: 60%;
+        }
+        .content-right{
+            width: 40%;
+            
+            p{
+                text-align: justify;
+                font-style: italic;
+                padding-top: 15px;
+            }
+        }
+    }
+}
+
+
+
+//phần chung
+.section-share{
+    height: 330px;
+    
+    .section-container{
+        margin: 0 100px;
+        display: flex;
+        flex-direction: column;
+
+        .section-header{
+            height: 60px;
+            margin-bottom: 30px;
+            padding-top: 30px;
+
+            .title-section{
+                font-size: 22px;
+                font-weight: 600;
+            }
+            .btn-section{
+                float: right;
+                padding: 7px 13px;
+                font-size: 12px;
+                border: none;
+                outline: none;
+                display: block;   
+                background: #ebebeb; 
+                color: black;
+                cursor: pointer;
+                text-transform: uppercase;
+
+                &:hover{
+                    color: #fff;
+                    background: #f7d800;
+                }   
+            }
+        }
+    }
+}
+
+//reset click slider css
+.slick-prev{
+
+    left: -15px !important;
+    z-index: 1000;
+    width: 44px !important;
+    height: 48px !important;
+    background: #fff !important;
+    border: 2px solid #d7d7d7 !important;
+
+    &:before{
+        font-family: FontAwesome !important;
+        color: red !important;
+    }
+    &:hover{
+        background: #eceaea !important;
+    }
+} 
+
+.slick-next{
+    right: -15px !important;
+    z-index: 1000;
+    width: 44px !important;
+    height: 48px !important;
+    background: #fff !important;
+    border: 2px solid #d7d7d7 !important;
+
+    &:before{
+        font-family: FontAwesome !important;
+        color: red !important;
+    }
+    &:hover{
+        background: #eceaea !important;
+    }
+}
+
+.slick-disabled{
+    display: none !important;
+}
