@@ -15,7 +15,9 @@ import Home from '../routes/Home';
 import Login from './Auth/Login';
 import Header from './Header/Header';
 import System from '../routes/System';
+import Doctor from '../routes/Doctor';
 import HomePage from './HomePage/HomePage.js'
+import DetailDoctor from './Patient/Doctor/DetailDoctor';
 
 import { CustomToastCloseButton } from '../components/CustomToast';
 
@@ -53,7 +55,9 @@ class App extends Component {
                                     <Route path={path.HOME} exact component={(Home)} />
                                     <Route path={path.LOGIN} component={userIsNotAuthenticated(Login)} />
                                     <Route path={path.SYSTEM} component={userIsAuthenticated(System)} />
+                                    <Route path={path.DOCTOR} component={userIsAuthenticated(Doctor)} />
                                     <Route path={path.HOMEPAGE} component={HomePage} />
+                                    <Route path={path.DETAIL_DOCTOR} component ={DetailDoctor} />
                                 </Switch>
                             </CustomScrollbars>
                         </div>
@@ -66,7 +70,7 @@ class App extends Component {
                         /> */}
                         <ToastContainer
                             position="bottom-right"
-                            autoClose={5000}
+                            autoClose={3000}
                             hideProgressBar={false}
                             newestOnTop={false}
                             closeOnClick

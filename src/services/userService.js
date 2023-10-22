@@ -4,6 +4,7 @@ const handleLoginApi = (userEmail,userPassword)=>{
      return axios.post('/api/login',{email: userEmail,password: userPassword})
 }
 
+//User
 const getAllUsers= (inputId) =>{
      return axios.get(`/api/get-all-users?id=${inputId}`)
 }
@@ -28,6 +29,7 @@ const getAllCodeService =(inputType) =>{
      return axios.get(`/api/allcode?type=${inputType}`)
 }
 
+//Doctor
 const getTopDoctorHomeService =(limitInput)=>{
      return axios.get(`/api/top-doctor-home?limit=${limitInput}`)
 }
@@ -40,6 +42,10 @@ const saveDetailDoctorService = (data) =>{
      return axios.post('/api/save-infor-doctors',data)
 }
 
+const getDetailInforDoctor = (inputId)=>{
+     return axios.get(`/api/get-detail-doctor-by-id?id=${inputId}`);
+}
+
 export {
      handleLoginApi , 
      getAllUsers , 
@@ -49,5 +55,6 @@ export {
      getAllCodeService,
      getTopDoctorHomeService,
      getAllDoctors,
-     saveDetailDoctorService
+     saveDetailDoctorService,
+     getDetailInforDoctor,
 };
